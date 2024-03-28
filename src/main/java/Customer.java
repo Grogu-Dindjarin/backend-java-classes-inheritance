@@ -38,4 +38,11 @@ public class Customer {
     public void printName() {
         System.out.println("Customer " + this.name);
     }
+
+    public void printNameAndCreditcardDebt() {
+        System.out.println("Customer " +
+                this.name +
+                ", creditcard debt: " +
+                this.getCreditCard().getDebt());
+    }
 }
